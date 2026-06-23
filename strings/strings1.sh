@@ -1,9 +1,9 @@
-#!/bin/bash
+#!/bin/zsh
 
-#Arrays : Key-Value
+# Strings
 
-declare -A myarray
+myvar="Hey buddy, how are you?"
 
-myarray=([name]=Mihir [age]=21)
+myvar_length=${#myvar}
 
-echo "Hello i am ${myarray[name]} and i am ${myarray[age]} years old"
+echo "Length of myvar is : $myvar_length"
