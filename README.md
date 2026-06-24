@@ -1,83 +1,180 @@
-# Shell Scripting — Learning Examples
+# 🐚 Shell Scripting — Learning Examples
 
-Beginner-friendly collection of Bash / Zsh shell scripts demonstrating core concepts and practical patterns for learning shell scripting (variables, arrays, strings, comments, key/value, timing/sleep, and small examples).
+> A beginner-friendly collection of Bash/Zsh shell scripts covering core concepts with clean, runnable examples.
 
-## Stack
-- Language(s): Shell (Bash / Zsh)
-- Runtime: POSIX-compatible shell (Bash preferred for some examples)
-- Notable tools: coreutils (sh, bash), chmod
+![Shell](https://img.shields.io/badge/Shell-Bash%20%2F%20Zsh-4EAA25?style=flat&logo=gnu-bash&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-blue?style=flat)
+![Status](https://img.shields.io/badge/Status-Learning%20Resource-orange?style=flat)
 
-## What’s in this repository
-A set of short, focused example scripts organized by topic. Each script is intentionally small and annotated so learners can run, inspect, and modify it.
+---
 
-Top-level layout:
+## 📖 About
+
+This repository is a structured learning resource for anyone getting started with shell scripting. Each script is intentionally short, well-commented, and focused on a single concept — making it easy to read, run, and experiment with.
+
+Topics covered: **variables**, **arrays**, **strings**, **conditions**, **arithmetic**, **user interaction**, **key/value handling**, **comments**, and **timing/sleep**.
+
+---
+
+## 📁 Repository Structure
+
 ```
-arrays/          # array1.sh, array2.sh — indexed arrays and operations
-basic/           # 01_basic.sh — first/basic script examples
-comments/        # comments1.sh — examples of comments and structure
-  variables/     # (nested) variable-related comment examples
-key_value/       # key_value1.sh — key/value-like handling in shell
-strings/         # UpperCase_LowerCase.sh, strings1.sh — string manipulation examples
-variables/       # constant.sh, variable1.sh, variables2.sh — variable usage patterns
-sleep.sh         # tiny demo for sleep / timing
-README.md        # this file
+Shell_Scripting/
+│
+├── basic/                    # First steps in shell scripting
+│   └── 01_basic.sh
+│
+├── variables/                # Variable declaration and usage
+│   ├── variable1.sh
+│   ├── variables2.sh
+│   └── constant.sh           # Read-only / constant-like variables
+│
+├── arrays/                   # Indexed arrays and iteration
+│   ├── array1.sh
+│   └── array2.sh
+│
+├── strings/                  # String manipulation
+│   ├── strings1.sh
+│   └── UpperCase_LowerCase.sh
+│
+├── Arithmetics_Ops/          # Arithmetic operations
+│
+├── Condition/                # Conditional statements (if/else)
+│
+├── Calculator/               # Simple calculator script
+│
+├── User_Interaction/         # Reading user input
+│
+├── key_value/                # Key/value pair handling
+│   └── key_value1.sh
+│
+├── comments/                 # Comment style examples
+│   └── comments1.sh
+│
+├── sleep.sh                  # Timing and sleep demonstration
+└── README.md
 ```
 
-## How to run the examples
-Prerequisites:
-- Unix-like OS (Linux, macOS) with Bash or Zsh installed.
-- No other dependencies.
+---
 
-Quick start:
-1. Clone the repo:
-   git clone https://github.com/Mihir-Mithani/Shell_Scripting.git
-2. Make a script executable and run it, e.g.:
-   chmod +x basic/01_basic.sh
-   ./basic/01_basic.sh
+## 🚀 Getting Started
 
-Run with a specific shell if preferred:
-- bash basic/01_basic.sh
-- zsh strings/UpperCase_LowerCase.sh
+### Prerequisites
 
-Examples:
-- Run variable demo:
-  chmod +x variables/variable1.sh
-  ./variables/variable1.sh
+- A Unix-like OS (Linux or macOS)
+- `bash` or `zsh` installed (comes pre-installed on most systems)
+- No additional dependencies required
 
-- Run array demo:
-  chmod +x arrays/array1.sh
-  ./arrays/array1.sh
+### Clone the Repository
 
-- Run sleep demo:
-  chmod +x sleep.sh
-  ./sleep.sh
+```bash
+git clone https://github.com/Mihir-Mithani/Shell_Scripting.git
+cd Shell_Scripting
+```
 
-Notes:
-- Some scripts may assume Bash features (e.g., indexed arrays). If a script uses Bash extensions, run it explicitly with bash.
-- If a file is empty or placeholder (size 0), it may be a stub or intentionally left for exercises.
+### Run Any Script
 
-## File highlights
-- arrays/array1.sh — indexed arrays, iterating and accessing elements.
-- arrays/array2.sh — short additional array example.
-- basic/01_basic.sh — minimal starting script.
-- comments/comments1.sh — usage of comments and small examples.
-- key_value/key_value1.sh — simple key/value parsing technique.
-- strings/UpperCase_LowerCase.sh — uppercase/lowercase transformations.
-- variables/constant.sh — example of read-only/constant-like values.
-- variables/variable1.sh, variables/variables2.sh — variable declaration and usage.
-- sleep.sh — demonstrate sleep/timing.
+**Make it executable first, then run:**
+```bash
+chmod +x basic/01_basic.sh
+./basic/01_basic.sh
+```
 
-## Contributing
-- Add new example scripts under a clearly named directory.
-- Keep scripts small, well-commented, and runnable with chmod +x or via `bash script.sh`.
-- If you submit exercises, add an expected output comment or a test script in a tests/ directory.
+**Or run directly with a shell:**
+```bash
+bash basic/01_basic.sh
+zsh strings/UpperCase_LowerCase.sh
+```
 
-## License
-No license file detected. If you want to allow reuse, add a LICENSE (e.g., MIT) to the repository.
+> **Note:** Some scripts use Bash-specific features (e.g., indexed arrays). Always run those with `bash` explicitly.
 
-## Suggested commit message
-docs: improve README — add overview, structure, run instructions, and examples
+---
 
-## Author
--Mihir Mithani
+## 📝 Script Highlights
 
+| Script | Topic | What It Covers |
+|---|---|---|
+| `basic/01_basic.sh` | Basics | Your first shell script — echo, shebang |
+| `variables/variable1.sh` | Variables | Declaring and using variables |
+| `variables/constant.sh` | Variables | Read-only variables with `readonly` |
+| `arrays/array1.sh` | Arrays | Creating, accessing, iterating arrays |
+| `arrays/array2.sh` | Arrays | Additional array operations |
+| `strings/strings1.sh` | Strings | String operations and substitution |
+| `strings/UpperCase_LowerCase.sh` | Strings | Case conversion techniques |
+| `Arithmetics_Ops/` | Arithmetic | `expr`, `$(( ))`, `bc` for calculations |
+| `Condition/` | Conditions | `if`, `elif`, `else`, comparison operators |
+| `Calculator/` | Project | Combines input, conditions, and arithmetic |
+| `User_Interaction/` | Input | Reading input with `read` |
+| `key_value/key_value1.sh` | Data | Simulating key/value pairs in Bash |
+| `comments/comments1.sh` | Style | Single-line and multi-line comments |
+| `sleep.sh` | Timing | Using `sleep` for delays and timing |
+
+---
+
+## 💡 Concepts Covered
+
+- **Variables** — declaring, assigning, and using shell variables
+- **Constants** — read-only variables with `readonly`
+- **Arrays** — indexed arrays, accessing elements, looping over arrays
+- **Strings** — length, slicing, case conversion, substitution
+- **Arithmetic** — integer and floating-point operations
+- **Conditions** — `if/elif/else`, comparison operators, file tests
+- **User Input** — reading from stdin with `read`
+- **Key/Value** — associative-array-like patterns
+- **Timing** — `sleep`, script delays
+- **Comments** — best practices for documenting shell scripts
+
+---
+
+## ▶️ Quick Examples
+
+**Run the variable demo:**
+```bash
+chmod +x variables/variable1.sh && ./variables/variable1.sh
+```
+
+**Run the array demo:**
+```bash
+chmod +x arrays/array1.sh && ./arrays/array1.sh
+```
+
+**Run the calculator:**
+```bash
+chmod +x Calculator/*.sh && bash Calculator/*.sh
+```
+
+**Run the sleep demo:**
+```bash
+chmod +x sleep.sh && ./sleep.sh
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Here's how to add to this resource:
+
+1. Fork the repository
+2. Create a new branch: `git checkout -b feature/new-topic`
+3. Add your script under an appropriately named directory
+4. Keep scripts **small**, **well-commented**, and runnable with `bash script.sh`
+5. If submitting exercises, include expected output in a comment block at the top
+6. Open a Pull Request with a short description
+
+---
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+## 👤 Author
+
+**Mihir Mithani**
+
+- GitHub: [@Mihir-Mithani](https://github.com/Mihir-Mithani)
+
+---
+
+> ⭐ Found this helpful? Give the repo a star to show your support!
