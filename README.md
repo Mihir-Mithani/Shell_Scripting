@@ -1,152 +1,83 @@
-# 🐚 Shell Scripting
+# Shell Scripting — Learning Examples
 
-A beginner-friendly collection of shell scripts covering core concepts of Bash/Zsh scripting. Built as a learning reference with practical, hands-on examples.
+Beginner-friendly collection of Bash / Zsh shell scripts demonstrating core concepts and practical patterns for learning shell scripting (variables, arrays, strings, comments, key/value, timing/sleep, and small examples).
 
----
+## Stack
+- Language(s): Shell (Bash / Zsh)
+- Runtime: POSIX-compatible shell (Bash preferred for some examples)
+- Notable tools: coreutils (sh, bash), chmod
 
-## 📁 Repository Structure
+## What’s in this repository
+A set of short, focused example scripts organized by topic. Each script is intentionally small and annotated so learners can run, inspect, and modify it.
 
+Top-level layout:
 ```
-Shell_Scripting/
-├── basic/
-│   └── 01_basic.sh          # First script — printing output with echo
-├── comments/
-│   ├── comments1.sh         # Single-line and multi-line comments
-│   └── variables/
-│       └── variable1.sh     # (placeholder)
-├── variables/
-│   ├── variable1.sh         # Declaring and reassigning variables
-│   ├── variables2.sh        # Variables + command substitution (hostname)
-│   └── constant.sh          # Readonly/constant variables
-├── strings/
-│   └── strings1.sh          # String length using ${#var}
-├── arrays/
-│   ├── array1.sh            # Indexed arrays, slicing, and length
-│   └── array2.sh            # Appending to arrays
-├── key_value/
-│   └── key_value1.sh        # Associative arrays (key-value pairs)
-└── sleep.sh                 # Demonstrating the sleep command
+arrays/          # array1.sh, array2.sh — indexed arrays and operations
+basic/           # 01_basic.sh — first/basic script examples
+comments/        # comments1.sh — examples of comments and structure
+  variables/     # (nested) variable-related comment examples
+key_value/       # key_value1.sh — key/value-like handling in shell
+strings/         # UpperCase_LowerCase.sh, strings1.sh — string manipulation examples
+variables/       # constant.sh, variable1.sh, variables2.sh — variable usage patterns
+sleep.sh         # tiny demo for sleep / timing
+README.md        # this file
 ```
 
----
+## How to run the examples
+Prerequisites:
+- Unix-like OS (Linux, macOS) with Bash or Zsh installed.
+- No other dependencies.
 
-## 📋 Topics Covered
+Quick start:
+1. Clone the repo:
+   git clone https://github.com/Mihir-Mithani/Shell_Scripting.git
+2. Make a script executable and run it, e.g.:
+   chmod +x basic/01_basic.sh
+   ./basic/01_basic.sh
 
-| Topic | File(s) | What You'll Learn |
-|---|---|---|
-| **Basics** | `basic/01_basic.sh` | `echo`, shebang line (`#!/bin/zsh`) |
-| **Comments** | `comments/comments1.sh` | `#` single-line, `<<comment...comment` multi-line |
-| **Variables** | `variables/variable1.sh`, `variables2.sh` | Declaring, reassigning, command substitution with `$()` |
-| **Constants** | `variables/constant.sh` | `readonly` keyword, immutable variables |
-| **Strings** | `strings/strings1.sh` | String length with `${#variable}` |
-| **Arrays** | `arrays/array1.sh` | Indexed arrays, access by index, slicing, `${#array[*]}` |
-| **Array Update** | `arrays/array2.sh` | Appending elements with `+=` |
-| **Key-Value / Maps** | `key_value/key_value1.sh` | Associative arrays using `declare -A` |
-| **Sleep / Timing** | `sleep.sh` | `sleep` command for delays |
+Run with a specific shell if preferred:
+- bash basic/01_basic.sh
+- zsh strings/UpperCase_LowerCase.sh
 
----
+Examples:
+- Run variable demo:
+  chmod +x variables/variable1.sh
+  ./variables/variable1.sh
 
-## 🚀 Getting Started
+- Run array demo:
+  chmod +x arrays/array1.sh
+  ./arrays/array1.sh
 
-### Prerequisites
+- Run sleep demo:
+  chmod +x sleep.sh
+  ./sleep.sh
 
-- A Unix/Linux/macOS system
-- **Bash** (`bash --version`) or **Zsh** (`zsh --version`) shell
+Notes:
+- Some scripts may assume Bash features (e.g., indexed arrays). If a script uses Bash extensions, run it explicitly with bash.
+- If a file is empty or placeholder (size 0), it may be a stub or intentionally left for exercises.
 
-### Clone the Repository
+## File highlights
+- arrays/array1.sh — indexed arrays, iterating and accessing elements.
+- arrays/array2.sh — short additional array example.
+- basic/01_basic.sh — minimal starting script.
+- comments/comments1.sh — usage of comments and small examples.
+- key_value/key_value1.sh — simple key/value parsing technique.
+- strings/UpperCase_LowerCase.sh — uppercase/lowercase transformations.
+- variables/constant.sh — example of read-only/constant-like values.
+- variables/variable1.sh, variables/variables2.sh — variable declaration and usage.
+- sleep.sh — demonstrate sleep/timing.
 
-```bash
-git clone https://github.com/Mihir-Mithani/Shell_Scripting.git
-cd Shell_Scripting
-```
+## Contributing
+- Add new example scripts under a clearly named directory.
+- Keep scripts small, well-commented, and runnable with chmod +x or via `bash script.sh`.
+- If you submit exercises, add an expected output comment or a test script in a tests/ directory.
 
-### Run a Script
+## License
+No license file detected. If you want to allow reuse, add a LICENSE (e.g., MIT) to the repository.
 
-```bash
-# Make the script executable
-chmod +x variables/variable1.sh
+## Suggested commit message
+docs: improve README — add overview, structure, run instructions, and examples
 
-# Run it
-./variables/variable1.sh
-```
+## Author
+-Mihir Mithani
 
----
-
-## 🔍 Script Highlights
-
-### Variables & Command Substitution (`variables/variables2.sh`)
-```bash
-name="mihir"
-age=21
-echo "My name is $name, I am $age years old"
-
-# Store command output in a variable
-hostname=$(hostname)
-echo "I am using hostname $hostname"
-```
-
-### Readonly / Constant Variables (`variables/constant.sh`)
-```bash
-readonly College="Marwadi University"
-echo $College
-
-College="Parul University"   # This will throw an error — cannot reassign readonly!
-```
-
-### Indexed Arrays (`arrays/array1.sh`)
-```bash
-myarray=(1 2 mihir mithani)
-
-echo "${myarray[*]}"        # All elements
-echo "${myarray[0]}"        # First element
-echo "${#myarray[*]}"       # Array length
-echo "${myarray[*]:1:2}"    # Slice from index 1, 2 elements
-```
-
-### Associative Arrays / Key-Value (`key_value/key_value1.sh`)
-```bash
-declare -A myarray
-myarray=([name]=Mihir [age]=21)
-
-echo "Hello I am ${myarray[name]} and I am ${myarray[age]} years old"
-```
-
-### Multi-line Comments (`comments/comments1.sh`)
-```bash
-# Single line comment
-
-<<comment
-This is
-a multi-line
-comment block
-comment
-```
-
----
-
-## 💡 Tips
-
-- Scripts using `#!/bin/zsh` run in Zsh; scripts using `#!/bin/bash` run in Bash. Make sure the correct shell is installed.
-- Use `chmod +x script.sh` to make a script executable before running it.
-- Use `shellcheck` to lint your scripts and catch common mistakes: [shellcheck.net](https://www.shellcheck.net/)
-
----
-
-## 📚 Learning Resources
-
-- [GNU Bash Manual](https://www.gnu.org/software/bash/manual/)
-- [Zsh Documentation](https://zsh.sourceforge.io/Doc/)
-- [ShellCheck — Online Linter](https://www.shellcheck.net/)
-- [Bash Guide for Beginners](https://tldp.org/LDP/Bash-Beginners-Guide/html/)
-- [explainshell.com](https://explainshell.com/) — Explains any shell command visually
-
----
-
-## 👤 Author
-
-**Mihir Mithani**  
-GitHub: [@Mihir-Mithani](https://github.com/Mihir-Mithani)
-
----
-
-> ⭐ If you find this helpful, give it a star!
