@@ -1,180 +1,207 @@
-# 🐚 Shell Scripting — Learning Examples
+# 🐚 Shell Scripting
 
-> A beginner-friendly collection of Bash/Zsh shell scripts covering core concepts with clean, runnable examples.
-
-![Shell](https://img.shields.io/badge/Shell-Bash%20%2F%20Zsh-4EAA25?style=flat&logo=gnu-bash&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-blue?style=flat)
-![Status](https://img.shields.io/badge/Status-Learning%20Resource-orange?style=flat)
+A collection of Bash/Shell scripting programs covering Linux fundamentals, automation tasks, scripting concepts, and practical examples. This repository serves as a learning resource for understanding shell scripting and building automation scripts for Linux environments.
 
 ---
 
-## 📖 About
+## 📌 About
 
-This repository is a structured learning resource for anyone getting started with shell scripting. Each script is intentionally short, well-commented, and focused on a single concept — making it easy to read, run, and experiment with.
+This repository contains shell scripts that demonstrate various Bash scripting concepts, including:
 
-Topics covered: **variables**, **arrays**, **strings**, **conditions**, **arithmetic**, **user interaction**, **key/value handling**, **comments**, and **timing/sleep**.
+* Shell script fundamentals
+* Variables and user input
+* Conditional statements
+* Loops
+* Functions
+* File and directory operations
+* String manipulation
+* Arithmetic operations
+* Process automation
+* System administration tasks
+* Utility scripts for Linux
+
+The goal is to learn Bash scripting through hands-on examples and practical implementations.
 
 ---
 
-## 📁 Repository Structure
+## 📂 Repository Structure
 
-```
+```text
 Shell_Scripting/
 │
-├── basic/                    # First steps in shell scripting
-│   └── 01_basic.sh
-│
-├── variables/                # Variable declaration and usage
-│   ├── variable1.sh
-│   ├── variables2.sh
-│   └── constant.sh           # Read-only / constant-like variables
-│
-├── arrays/                   # Indexed arrays and iteration
-│   ├── array1.sh
-│   └── array2.sh
-│
-├── strings/                  # String manipulation
-│   ├── strings1.sh
-│   └── UpperCase_LowerCase.sh
-│
-├── Arithmetics_Ops/          # Arithmetic operations
-│
-├── Condition/                # Conditional statements (if/else)
-│
-├── Calculator/               # Simple calculator script
-│
-├── User_Interaction/         # Reading user input
-│
-├── key_value/                # Key/value pair handling
-│   └── key_value1.sh
-│
-├── comments/                 # Comment style examples
-│   └── comments1.sh
-│
-├── sleep.sh                  # Timing and sleep demonstration
+├── Basic Scripts/
+├── Variables/
+├── Conditions/
+├── Loops/
+├── Functions/
+├── File Operations/
+├── System Utilities/
+├── Automation Scripts/
 └── README.md
 ```
 
+> Folder names may vary depending on the repository contents.
+
 ---
 
-## 🚀 Getting Started
+## 🚀 Features
 
-### Prerequisites
+* Beginner-friendly shell scripts
+* Well-commented code
+* Covers essential Bash scripting concepts
+* Real-world automation examples
+* Linux command demonstrations
+* Easy to understand and modify
 
-- A Unix-like OS (Linux or macOS)
-- `bash` or `zsh` installed (comes pre-installed on most systems)
-- No additional dependencies required
+---
 
-### Clone the Repository
+## 🛠 Prerequisites
+
+Before running the scripts, make sure you have:
+
+* Linux (Ubuntu/Debian/Fedora/CentOS etc.)
+* macOS Terminal
+* WSL (Windows Subsystem for Linux)
+* Bash Shell
+
+Check your Bash version:
+
+```bash
+bash --version
+```
+
+---
+
+## ▶️ Running a Script
+
+Clone the repository:
 
 ```bash
 git clone https://github.com/Mihir-Mithani/Shell_Scripting.git
+```
+
+Navigate into the repository:
+
+```bash
 cd Shell_Scripting
 ```
 
-### Run Any Script
+Give execution permission:
 
-**Make it executable first, then run:**
 ```bash
-chmod +x basic/01_basic.sh
-./basic/01_basic.sh
+chmod +x script_name.sh
 ```
 
-**Or run directly with a shell:**
+Run the script:
+
 ```bash
-bash basic/01_basic.sh
-zsh strings/UpperCase_LowerCase.sh
+./script_name.sh
 ```
 
-> **Note:** Some scripts use Bash-specific features (e.g., indexed arrays). Always run those with `bash` explicitly.
+or
+
+```bash
+bash script_name.sh
+```
 
 ---
 
-## 📝 Script Highlights
+## 📚 Topics Covered
 
-| Script | Topic | What It Covers |
-|---|---|---|
-| `basic/01_basic.sh` | Basics | Your first shell script — echo, shebang |
-| `variables/variable1.sh` | Variables | Declaring and using variables |
-| `variables/constant.sh` | Variables | Read-only variables with `readonly` |
-| `arrays/array1.sh` | Arrays | Creating, accessing, iterating arrays |
-| `arrays/array2.sh` | Arrays | Additional array operations |
-| `strings/strings1.sh` | Strings | String operations and substitution |
-| `strings/UpperCase_LowerCase.sh` | Strings | Case conversion techniques |
-| `Arithmetics_Ops/` | Arithmetic | `expr`, `$(( ))`, `bc` for calculations |
-| `Condition/` | Conditions | `if`, `elif`, `else`, comparison operators |
-| `Calculator/` | Project | Combines input, conditions, and arithmetic |
-| `User_Interaction/` | Input | Reading input with `read` |
-| `key_value/key_value1.sh` | Data | Simulating key/value pairs in Bash |
-| `comments/comments1.sh` | Style | Single-line and multi-line comments |
-| `sleep.sh` | Timing | Using `sleep` for delays and timing |
-
----
-
-## 💡 Concepts Covered
-
-- **Variables** — declaring, assigning, and using shell variables
-- **Constants** — read-only variables with `readonly`
-- **Arrays** — indexed arrays, accessing elements, looping over arrays
-- **Strings** — length, slicing, case conversion, substitution
-- **Arithmetic** — integer and floating-point operations
-- **Conditions** — `if/elif/else`, comparison operators, file tests
-- **User Input** — reading from stdin with `read`
-- **Key/Value** — associative-array-like patterns
-- **Timing** — `sleep`, script delays
-- **Comments** — best practices for documenting shell scripts
+* Introduction to Bash
+* Shebang (`#!/bin/bash`)
+* Variables
+* Environment Variables
+* Command Line Arguments
+* User Input
+* Arithmetic Operations
+* If Statements
+* If-Else Statements
+* Nested Conditions
+* Case Statements
+* For Loops
+* While Loops
+* Until Loops
+* Functions
+* Arrays
+* File Handling
+* String Operations
+* Process Management
+* Scheduling Tasks
+* Basic Linux Automation
 
 ---
 
-## ▶️ Quick Examples
+## 💡 Learning Objectives
 
-**Run the variable demo:**
+By completing these scripts, you will learn how to:
+
+* Write executable shell scripts
+* Automate repetitive Linux tasks
+* Work with files and directories
+* Process user input
+* Create reusable Bash functions
+* Debug shell scripts
+* Build simple system administration tools
+
+---
+
+## 📖 Example
+
 ```bash
-chmod +x variables/variable1.sh && ./variables/variable1.sh
+#!/bin/bash
+
+echo "Hello, World!"
+echo "Welcome to Shell Scripting."
 ```
 
-**Run the array demo:**
-```bash
-chmod +x arrays/array1.sh && ./arrays/array1.sh
+Output:
+
+```text
+Hello, World!
+Welcome to Shell Scripting.
 ```
 
-**Run the calculator:**
-```bash
-chmod +x Calculator/*.sh && bash Calculator/*.sh
-```
+---
 
-**Run the sleep demo:**
-```bash
-chmod +x sleep.sh && ./sleep.sh
-```
+## 🎯 Future Improvements
+
+* Advanced Bash scripting examples
+* Log monitoring scripts
+* Backup automation
+* Cron job examples
+* Server health monitoring
+* Menu-driven shell applications
+* DevOps automation scripts
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! Here's how to add to this resource:
+Contributions are welcome!
+
+If you have improvements or additional scripts:
 
 1. Fork the repository
-2. Create a new branch: `git checkout -b feature/new-topic`
-3. Add your script under an appropriately named directory
-4. Keep scripts **small**, **well-commented**, and runnable with `bash script.sh`
-5. If submitting exercises, include expected output in a comment block at the top
-6. Open a Pull Request with a short description
+2. Create a new branch
+3. Commit your changes
+4. Open a Pull Request
 
 ---
 
 ## 📄 License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is licensed under the MIT License.
 
 ---
 
-## 👤 Author
+## 👨‍💻 Author
 
 **Mihir Mithani**
 
-- GitHub: [@Mihir-Mithani](https://github.com/Mihir-Mithani)
+* GitHub: https://github.com/Mihir-Mithani
 
 ---
 
-> ⭐ Found this helpful? Give the repo a star to show your support!
+⭐ If you found this repository useful, consider giving it a star!
+
