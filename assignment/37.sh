@@ -1,3 +1,3 @@
 # Author : Mihir Mithani
 
-#!/bin/bash
+#!/opt/homebrew/bin/bash

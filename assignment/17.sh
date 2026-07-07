@@ -1,6 +1,6 @@
 # Author : Mihir Mithani
 
-#!/bin/bash
+#!/opt/homebrew/bin/bash
 
 square(){
     local a=$1

@@ -1,5 +1,5 @@
 # Author : Mihir Mithani
 
-#!/bin/bash
+#!/opt/homebrew/bin/bash
 
 echo "Hello, World"

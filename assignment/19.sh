@@ -1,5 +1,5 @@
 # Author : Mihir Mithani
-#!/bin/bash
+#!/opt/homebrew/bin/bash
 
 cat <<EOF > data.txt
 My name is Mihir Mithani

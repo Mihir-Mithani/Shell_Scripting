@@ -1,6 +1,6 @@
-#!/bin/bash
+#!/opt/homebrew/bin/bash
 
-for i in {7..19}
+for i in {20..27}
 do
     bat $i.sh
     bash $i.sh

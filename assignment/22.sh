@@ -1,3 +1,7 @@
 # Author : Mihir Mithani
 
-#!/bin/bash
+#!/opt/homebrew/bin/bash
+
+name="Mihir"
+
+echo "Lenght of string : ${#name}"

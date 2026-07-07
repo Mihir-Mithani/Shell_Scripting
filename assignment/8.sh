@@ -1,6 +1,6 @@
 # Author : Mihir Mithani
 
-#!/bin/bash
+#!/opt/homebrew/bin/bash
 
 for i in {1..10}
 do

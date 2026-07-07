@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/opt/homebrew/bin/bash
 # Author : Mihir Mithani
 
 read -p "Enter Number : " number

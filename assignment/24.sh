@@ -1,3 +1,9 @@
 # Author : Mihir Mithani
 
-#!/bin/bash
+#!/bin/zsh
+
+name="Mihir"
+
+echo "Original string : $name"
+upper=${name:u}
+echo "Uppercase string : $upper"

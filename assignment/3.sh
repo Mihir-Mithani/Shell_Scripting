@@ -1,6 +1,6 @@
 #Author : Mihir
 
-#!/bin/bash
+#!/opt/homebrew/bin/bash
 
 read input
 

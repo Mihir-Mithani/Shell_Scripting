@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/opt/homebrew/bin/bash
 # Author : Mihir Mithani
 
 array=(5 4 3 2 1)

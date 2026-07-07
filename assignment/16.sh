@@ -1,6 +1,6 @@
 # Author : Mihir Mithani
 
-#!/bin/bash
+#!/opt/homebrew/bin/bash
 
 greet(){
     local name=$1
