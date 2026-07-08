@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for i in {31..39}
+for i in {1..70}
 do
     git add $i.sh
     git commit -m "Assignment"

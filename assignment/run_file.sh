@@ -1,6 +1,6 @@
 #!/opt/homebrew/bin/bash
 
-for i in {30..41}
+for i in {42..49}
 do
     bat $i.sh
     bash $i.sh
