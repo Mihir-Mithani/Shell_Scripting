@@ -2,4 +2,5 @@
 
 #!/opt/homebrew/bin/bash
 
-ps aux --sort=-%mem | head -n 6 | awk '{print $2, $4, $11}'
+echo "Displaying Memory Usage..."
+top -o MEM
