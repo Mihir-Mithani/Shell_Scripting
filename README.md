@@ -6,19 +6,22 @@ A collection of Bash/Shell scripting programs covering Linux fundamentals, autom
 
 ## 📌 About
 
-This repository contains shell scripts that demonstrate various Bash scripting concepts, including:
+This repository contains **177+ shell scripts** that demonstrate various Bash scripting concepts, including:
 
 * Shell script fundamentals
 * Variables and user input
-* Conditional statements
-* Loops
-* Functions
+* Conditional statements (if, elif, case)
+* Loops (for, while, until, break, continue)
+* Functions and argument handling
 * File and directory operations
 * String manipulation
 * Arithmetic operations
+* Logical operators (AND, OR)
+* Arrays and key-value pairs
 * Process automation
 * System administration tasks
 * Utility scripts for Linux
+* Practice assignments (140+ scripts)
 
 The goal is to learn Bash scripting through hands-on examples and practical implementations.
 
@@ -29,18 +32,29 @@ The goal is to learn Bash scripting through hands-on examples and practical impl
 ```text
 Shell_Scripting/
 │
-├── Basic Scripts/
-├── Variables/
-├── Conditions/
-├── Loops/
-├── Functions/
-├── File Operations/
-├── System Utilities/
-├── Automation Scripts/
+├── basic/                 # Basic shell script examples (1 script)
+├── variables/             # Variable declarations and usage (3 scripts)
+├── comments/              # Comment examples (1 script)
+├── Arithmetics_Ops/       # Arithmetic operations (1 script)
+├── Calculator/            # Simple calculator script (1 script)
+├── Condition/             # Conditional statements - if, elif, else (2 scripts)
+├── switch/                # Case/switch statements (1 script)
+├── Logical_Operator/      # Logical operators - AND, OR (4 scripts)
+├── Loops/                 # Loop control - break, continue (2 scripts)
+├── functions/             # Function definitions and usage (4 scripts)
+├── arrays/                # Array operations (2 scripts)
+├── strings/               # String manipulation (4 scripts)
+├── key_value/             # Key-value pair handling (1 script)
+├── User_Interaction/      # User input and interaction (3 scripts)
+├── assignment/            # Practice assignments set 1 (74 scripts)
+├── assignments2/          # Practice assignments set 2 (72 scripts)
+├── git_log.log            # Git commit history log
+├── git_log.txt            # Git commit history text
+├── sleep.sh               # Sleep command example
 └── README.md
 ```
 
-> Folder names may vary depending on the repository contents.
+> **Total: 177 shell scripts** across 15 topic directories
 
 ---
 
@@ -52,6 +66,7 @@ Shell_Scripting/
 * Real-world automation examples
 * Linux command demonstrations
 * Easy to understand and modify
+* Extensive practice assignments
 
 ---
 
@@ -108,27 +123,108 @@ bash script_name.sh
 
 ## 📚 Topics Covered
 
+### Fundamentals
 * Introduction to Bash
 * Shebang (`#!/bin/bash`)
-* Variables
+* Variables and constants
 * Environment Variables
 * Command Line Arguments
 * User Input
-* Arithmetic Operations
+* Comments
+
+### Control Structures
 * If Statements
 * If-Else Statements
+* Elif (Else If) Statements
 * Nested Conditions
-* Case Statements
+* Case Statements (Switch)
 * For Loops
 * While Loops
 * Until Loops
+* Loop Control (break, continue)
+
+### Data Structures & Operations
 * Functions
 * Arrays
+* Key-Value Pairs
+* String Operations (slice, replace, case conversion)
+* Arithmetic Operations
+* Logical Operators (AND, OR)
+
+### Advanced Topics
 * File Handling
-* String Operations
 * Process Management
 * Scheduling Tasks
 * Basic Linux Automation
+* Calculator Implementation
+
+### Practice Assignments
+* **Assignment Set 1** (74 scripts): Progressive exercises covering all topics
+* **Assignment Set 2** (72 scripts): Additional practice problems
+
+---
+
+## 📖 Examples
+
+### Basic Hello World
+```bash
+#!/bin/bash
+
+echo "Hello, World!"
+echo "Welcome to Shell Scripting."
+```
+
+**Output:**
+```text
+Hello, World!
+Welcome to Shell Scripting.
+```
+
+### Variables and User Input
+```bash
+#!/bin/bash
+
+echo "Enter your name:"
+read name
+echo "Hello, $name!"
+```
+
+### Conditional Statement
+```bash
+#!/bin/bash
+
+echo "Enter a number:"
+read num
+
+if [ $num -gt 0 ]; then
+    echo "Positive number"
+elif [ $num -lt 0 ]; then
+    echo "Negative number"
+else
+    echo "Zero"
+fi
+```
+
+### Loop Example
+```bash
+#!/bin/bash
+
+for i in {1..5}; do
+    echo "Iteration $i"
+done
+```
+
+### Function Example
+```bash
+#!/bin/bash
+
+greet() {
+    echo "Hello, $1!"
+}
+
+greet "World"
+greet "User"
+```
 
 ---
 
@@ -143,24 +239,9 @@ By completing these scripts, you will learn how to:
 * Create reusable Bash functions
 * Debug shell scripts
 * Build simple system administration tools
-
----
-
-## 📖 Example
-
-```bash
-#!/bin/bash
-
-echo "Hello, World!"
-echo "Welcome to Shell Scripting."
-```
-
-Output:
-
-```text
-Hello, World!
-Welcome to Shell Scripting.
-```
+* Handle arrays and strings
+* Perform arithmetic and logical operations
+* Use control structures effectively
 
 ---
 
@@ -173,6 +254,7 @@ Welcome to Shell Scripting.
 * Server health monitoring
 * Menu-driven shell applications
 * DevOps automation scripts
+* Error handling and debugging techniques
 
 ---
 
@@ -204,4 +286,3 @@ This project is licensed under the MIT License.
 ---
 
 ⭐ If you found this repository useful, consider giving it a star!
-
